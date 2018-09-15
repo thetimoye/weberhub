@@ -1,0 +1,102 @@
+.logo {
+  position: relative;
+  top: 2rem;
+  left: 49rem;
+  height: 6rem;
+}
+
+.container {
+  display: flex;
+  margin: 12rem auto;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text-welcome {
+  color: #fcfafa;
+  margin-bottom: 7rem;
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 0.867rem;
+}
+.text-verify {
+  margin-bottom: 5rem;
+  color: #ffffff;
+  font-size: 2.9rem;
+  font-weight: 400;
+}
+
+hr {
+  width: 54.2rem;
+  height: 0.4rem;
+  margin-bottom: 5rem;
+  border-radius: 0.1rem;
+  background-color: #fcfafa;
+  align-self: center;
+}
+
+.btn {
+  width: 34.4rem;
+  height: 8rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 3rem;
+  background-color: #161e43;
+  cursor: pointer;
+}
+.btn-text {
+  color: #ffffff;
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.317rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .logo {
+    left: 29rem;
+  }
+  .container {
+    width: 85%;
+  }
+  hr {
+    width: 100%;
+  }
+  .text-verify {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    left: 12rem;
+  }
+  .container {
+    margin: 20rem auto;
+  }
+  hr {
+    width: 100%;
+  }
+  .text-verify {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .logo {
+    left: 5rem;
+    height: 5rem;
+  }
+  hr {
+    width: 100%;
+  }
+  .text-verify {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  .container {
+    margin: 15rem auto;
+  }
+}
