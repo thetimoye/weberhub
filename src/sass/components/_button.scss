@@ -1,0 +1,20 @@
+.btn {
+  border-radius: 3rem;
+  cursor: pointer;
+
+  &-large {
+    width: 25rem;
+    height: 6rem;
+  }
+  &-blue-dark {
+    box-shadow: 0 3px 6px rgba($color-black, 0.16);
+    background-color: $color-blue-dark;
+  }
+
+  &-text {
+    color: $color-white;
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 0.317rem;
+  }
+}

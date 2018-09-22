@@ -1,0 +1,54 @@
+.header-text {
+  font-size: 4rem;
+  color: $color-white;
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
+}
+
+.body--text {
+  margin-bottom: $margin--bottom-large;
+  &-main {
+    color: $color-white-dark;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.867rem;
+  }
+  &-sub {
+    color: $color-white;
+    font-size: 2.5rem;
+    font-weight: 400;
+
+    @include respond(tab-portrait) {
+      line-height: 1.5;
+      width: 90%;
+    }
+  }
+}
+
+hr {
+  width: 54.2rem;
+  height: 0.4rem;
+  margin-bottom: 5rem;
+  border-radius: 0.1rem;
+  background-color: $color-white-dark;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.text-verify {
+  font-size: 2rem;
+  line-height: 1.5;
+
+  @include respond(phone) {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  @include respond(s-phone) {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
