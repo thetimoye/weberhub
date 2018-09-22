@@ -2,12 +2,15 @@
   "name": "weberhub",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://thetimoye.github.io/timi.weberhub",
   "dependencies": {
+    "gh-pages": "^2.0.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-scripts": "1.1.5"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
