@@ -1,0 +1,27 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == s-phone {
+    @media (max-width: 360px) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-portrait {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-landscape {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xLarge {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
