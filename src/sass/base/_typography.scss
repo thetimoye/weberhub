@@ -9,6 +9,7 @@
 
 .body--text {
   margin-bottom: $margin--bottom-large;
+
   &-main {
     color: $color-white-dark;
     font-size: 4rem;
@@ -35,7 +36,7 @@ hr {
   background-color: $color-white-dark;
 
   @include respond(phone) {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -44,10 +45,6 @@ hr {
   line-height: 1.5;
 
   @include respond(phone) {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-  @include respond(s-phone) {
     font-size: 2rem;
     line-height: 1.5;
   }

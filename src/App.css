@@ -13,7 +13,7 @@ html {
       font-size: 50%; } }
   @media (max-width: 360px) {
     html {
-      font-size: 450%; } }
+      font-size: 45%; } }
 
 body {
   height: 100vh;
@@ -50,16 +50,12 @@ hr {
   background-color: #fcfafa; }
   @media (max-width: 600px) {
     hr {
-      width: 100%; } }
+      width: 95%; } }
 
 .text-verify {
   font-size: 2rem;
   line-height: 1.5; }
   @media (max-width: 600px) {
-    .text-verify {
-      font-size: 2rem;
-      line-height: 1.5; } }
-  @media (max-width: 360px) {
     .text-verify {
       font-size: 2rem;
       line-height: 1.5; } }
