@@ -3,8 +3,13 @@
   cursor: pointer;
 
   &-large {
-    width: 25rem;
-    height: 6rem;
+    width: 22rem;
+    height: 5.5rem;
+
+    @include respond(tab-landscape) {
+      width: 20rem;
+      height: 5rem;
+    }
   }
   &-blue-dark {
     box-shadow: 0 3px 6px rgba($color-black, 0.16);
@@ -13,8 +18,12 @@
 
   &-text {
     color: $color-white;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.317rem;
+
+    @include respond(tab-landscape) {
+      font-size: 1.7rem;
+    }
   }
 }

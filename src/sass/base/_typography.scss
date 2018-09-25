@@ -2,7 +2,7 @@
   font-size: 4rem;
   color: $color-white;
 
-  @include respond(phone) {
+  @include respond(s-phone) {
     font-size: 3rem;
   }
 }
@@ -12,40 +12,45 @@
 
   &-main {
     color: $color-white-dark;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 600;
     letter-spacing: 0.867rem;
   }
   &-sub {
     color: $color-white;
-    font-size: 2.5rem;
-    font-weight: 400;
+    font-size: 2.3rem;
+
+    @include respond(tab-landscape) {
+      font-size: 2.3rem;
+    }
 
     @include respond(tab-portrait) {
       line-height: 1.5;
-      width: 90%;
     }
   }
 }
 
-hr {
-  width: 54.2rem;
-  height: 0.4rem;
+input {
+  width: 80%;
   margin-bottom: 5rem;
-  border-radius: 0.1rem;
-  background-color: $color-white-dark;
+  background: none;
+  border: none;
+  border-bottom: 2px solid $color-white-dark;
+  outline: none;
+  padding: 0.8rem;
+  color: $color-blue-dark;
+  font-size: 2.3rem;
+
+  @include respond(tab-landscape) {
+    width: 95%;
+    font-size: 2.3rem;
+  }
+  @include respond(tab-portrait) {
+    width: 70%;
+    font-size: 2.5rem;
+  }
 
   @include respond(phone) {
     width: 95%;
-  }
-}
-
-.text-verify {
-  font-size: 2rem;
-  line-height: 1.5;
-
-  @include respond(phone) {
-    font-size: 2rem;
-    line-height: 1.5;
   }
 }
