@@ -5,10 +5,9 @@ const AccountsActivation = props => {
     <main className="container-sub">
       <h2 className="body--text body--text-main"> Welcome </h2>
       <p className="body--text body--text-sub">
-        kindly check your email for a verification link to activate your account
-        or click the link below to resend
+        Enter your email address below to reset your password
       </p>
-      <hr />
+      <input type="email" placeholder="email@example.com" />
       <button className="btn btn-large btn-blue-dark btn-text"> Resend </button>
     </main>
   );

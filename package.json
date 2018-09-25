@@ -2,7 +2,7 @@
   "name": "weberhub",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thetimoye.github.io/timi.weberhub",
+  "homepage": "https://thetimoye.github.io/weberhub",
   "dependencies": {
     "gh-pages": "^2.0.0",
     "react": "^16.5.1",

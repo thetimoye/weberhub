@@ -9,11 +9,12 @@ html {
   font-size: 62.5%;
   font-family: Montserrat;
 
-  @include respond(phone) {
-    font-size: 50%;
-  }
-  @include respond(s-phone) {
+  @include respond(tab-portrait) {
     font-size: 45%;
+  }
+
+  @include respond(phone) {
+    font-size: 40%;
   }
 }
 
@@ -24,4 +25,16 @@ body {
     rgba($color-blue-medium, 0.85) 0%,
     rgba($color-blue-light, 0.85) 100%
   );
+  background-repeat: no-repeat;
+
+  @include respond(tab-landscape) {
+    height: 100%;
+  }
+
+  @include respond(tab-portrait) {
+    height: 100vh;
+  }
+  @include respond(s-phone) {
+    height: stretch;
+  }
 }
