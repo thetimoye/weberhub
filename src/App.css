@@ -45,16 +45,18 @@ body {
     letter-spacing: 0.867rem; }
   .body--text-sub {
     color: #ffffff;
-    font-size: 2.3rem; }
+    font-size: 2rem; }
     @media (max-width: 1200px) {
       .body--text-sub {
-        font-size: 2.3rem; } }
+        font-size: 2rem; } }
     @media (max-width: 900px) {
       .body--text-sub {
+        font-size: 2.3rem;
         line-height: 1.5; } }
 
 input {
-  width: 80%;
+  display: block;
+  width: 50rem;
   margin-bottom: 5rem;
   background: none;
   border: none;
@@ -62,18 +64,18 @@ input {
   outline: none;
   padding: 0.8rem;
   color: #161e43;
-  font-size: 2.3rem; }
+  font-size: 2rem; }
   @media (max-width: 1200px) {
     input {
-      width: 95%;
+      width: 45rem;
       font-size: 2.3rem; } }
   @media (max-width: 900px) {
     input {
-      width: 70%;
+      width: 50rem;
       font-size: 2.5rem; } }
   @media (max-width: 600px) {
     input {
-      width: 95%; } }
+      width: 45rem; } }
 
 .container {
   margin: 1rem auto;
@@ -84,27 +86,30 @@ input {
       margin: 2rem auto; } }
   .container-sub {
     margin: 10rem auto;
-    width: 46%;
+    width: 35%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around; }
+    text-align: center; }
+    @media (max-width: 1200px) {
+      .container-sub {
+        align-items: center;
+        align-content: center;
+        justify-content: center; } }
     @media (max-width: 900px) {
       .container-sub {
         width: 95%;
         margin: 20rem auto; } }
     @media (max-width: 600px) {
       .container-sub {
-        width: 95%;
         margin: 15rem auto; } }
 
 .btn {
   border-radius: 3rem;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 0 auto; }
   .btn-large {
-    width: 22rem;
-    height: 5.5rem; }
+    width: 18rem;
+    height: 4.5rem; }
     @media (max-width: 1200px) {
       .btn-large {
         width: 20rem;
